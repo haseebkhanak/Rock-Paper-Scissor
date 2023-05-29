@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style_game.css">
+
+  
+</head>
+<body>
+<div class="container mt-3 bg-dark" style="height: 700px;">
+
+    <p class="display-6 text-white">Round</p>
+    <span id="round" class="text-white">0</span>
+
+    <p class="display-4 text-center text-white">Rock Paper Scissor</p>
+  <div class="main">
+    <img src="3.jpg" alt="Not found" width="100 px" height="80px" class="rounded-pill" id="img-1" onclick="play('Rock')">
+    <img src="4.png" alt="Not found" width="150 px" height="80px" class="rounded-pill" id="img-2" onclick="play('Paper')">
+    <img src="5.avif" alt="Not found" width="100 px" height="80px" class="rounded-pill" id="img-3" onclick="play('Scissor')">
+</div>
+
+<div class="items">
+    <p class="ms-4 me-5 text-white">Rock</p>
+    <p class="ms-5 me-5 text-white">Paper</p>
+    <p class="ms-5 text-white">Scissor</p>
+</div>
+
+<br>
+<br>
+
+    <p class="text-white">Your Score</p> <span id="player" class="text-white">0</span>
+    <p class="text-white">Computer's Score</p> <span id="Computer" class="text-white">0</span>
+
+    <div id="one"></div>
+<br>
+    <div id="three"></div>
+
+    <div id="success" class="alert alert-success">
+        <h4>Congratulations! You have won the game</h4>
+    </div>
+
+    <div id="fail" class="alert alert-danger">
+        <h4>You have lost the game! Try again</h4>
+    </div>
+
+    <div id="draw" class="alert alert-info">
+        <h4>Oops! Match draw</h4>
+    </div>
+
+</div>
+</body>
+<script src="script_game.js"></script>
+</html>
